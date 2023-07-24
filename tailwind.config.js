@@ -4,6 +4,12 @@ export default {
     "./index.html",
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
+  purge: [
+    "./src/**/*.{js,ts,jsx,tsx}",
+    "./index.html",
+  ],
+  mode: "jit",
+  darkMode:false,
   theme: {
     extend: {},
   },
