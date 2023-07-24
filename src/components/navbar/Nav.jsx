@@ -4,8 +4,8 @@ import { NavLink } from 'react-router-dom'
 
 const Nav = () => {
   return (
-    <div>
-        <div className='logo'>
+    <div className='fixed top-0 left-0 h-screen w-16 m-0 flex flex-col bg-primary text-secondary shadow-lg'>
+        {/* <div className='logo'>
             <img src={logo}/>
         </div>
         <ul>
@@ -18,7 +18,11 @@ const Nav = () => {
             <li></li>
             <li></li>
             <li></li>
-        </div>
+        </div> */}
+        <i>A</i>
+        <i>B</i>
+        <i>C</i>
+        <i>D</i>
     </div>
   )
 }
