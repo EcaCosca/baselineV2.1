@@ -4,33 +4,38 @@ import viteLogo from '/vite.svg'
 import './App.css'
 import { Route, Routes } from 'react-router-dom'
 import Nav from './components/navbar/Nav'
+import Documentation from './pages/Documentation'
+import Tracks from './pages/Tracks'
+import Map from './pages/Map'
+import Profiles from './pages/Profiles'
+import Home from './pages/Home'
+import Contact from './pages/Contact'
+import Landing from './pages/Landing'
+import UserProfile from './pages/UserProfile'
 
 function App() {
   // const [count, setCount] = useState(0)
 
   return (
     <>
-      {/* <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p> */}
       <Nav/>
+      <Routes>
+        <Route path="/" element={<Home />}>
+          {/* <Route
+            path="messages"
+            element={<DashboardMessages />}
+          />
+          <Route path="tasks" element={<DashboardTasks />} /> */}
+        </Route>
+        {/* <Route path="about" element={<AboutPage />} /> */}
+        <Route path="documentation" element={<Documentation />} />
+        <Route path="tracks" element={<Tracks />} />
+        <Route path="map" element={<Map />} />
+        <Route path="profiles" element={<Profiles />} />
+        <Route path="userprofile" element={<UserProfile />} />
+        <Route path="contact" element={<Contact />} />
+        <Route path="landing" element={<Landing />} />
+      </Routes>
     </>
   )
 }
