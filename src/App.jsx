@@ -12,6 +12,10 @@ import Home from './pages/Home'
 import Contact from './pages/Contact'
 import Landing from './pages/Landing'
 import UserProfile from './pages/UserProfile'
+import Market from './pages/Market'
+import Donate from './pages/Donate'
+import Dashboard from './pages/Dashboard'
+import Settings from './pages/Settings'
 
 function App() {
   // const [count, setCount] = useState(0)
@@ -37,8 +41,10 @@ function App() {
         <Route path="userprofile" element={<UserProfile />} />
         <Route path="contact" element={<Contact />} />
         <Route path="landing" element={<Landing />} />
-        <Route path="donate" element={<Landing />} />
-        <Route path="market" element={<Landing />} />
+        <Route path="donate" element={<Donate />} />
+        <Route path="market" element={<Market />} />
+        <Route path="dashboard" element={<Dashboard />} />
+        <Route path="settings" element={<Settings />} />
       </Routes>
     </>
   )

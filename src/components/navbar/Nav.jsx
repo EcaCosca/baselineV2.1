@@ -19,7 +19,7 @@ const Nav = () => {
         <NavIcon active={isActive} icon={<FaHome size={28}/>} text="Home" />
         )}
       </NavLink>
-        <NavLink to="/profiles">
+        <NavLink to="/dashboard">
         {({ isActive, isPending }) => (
         <NavIcon  active={isActive} icon={<BsPlus size={32}/>} text="Dashboard"/>
         )}
