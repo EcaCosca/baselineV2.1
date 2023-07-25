@@ -37,6 +37,8 @@ function App() {
         <Route path="userprofile" element={<UserProfile />} />
         <Route path="contact" element={<Contact />} />
         <Route path="landing" element={<Landing />} />
+        <Route path="donate" element={<Landing />} />
+        <Route path="market" element={<Landing />} />
       </Routes>
     </>
   )

@@ -14,15 +14,51 @@ import {HiDocumentText} from 'react-icons/hi'
 const Nav = () => {
   return (
     <div className='fixed top-0 left-0 h-screen w-16 mx-auto flex flex-col bg-primary text-secondary shadow-lg'>
-        <NavIcon icon={<FaHome size={28}/>} text="Home"/>
-        <NavIcon icon={<BsPlus size={32}/>} text="Dashboard"/>
-        <NavIcon icon={<BiStats size={20}/>} text="Profiles"/>
-        <NavIcon icon={<LiaMapMarkedAltSolid size={20}/>} text="Map"/>
-        <NavIcon icon={<FiSettings size={20}/>} text="Settings"/>
-        <NavIcon icon={<AiOutlineMail size={20}/>} text="Contact"/>
-        <NavIcon icon={<HiDocumentText size={20}/>} text="Documentation"/>
-        <NavIcon icon={<FaPaypal size={20}/>} text="Donate"/>
-        <NavIcon icon={<AiOutlineShoppingCart size={20}/>} text="Sale"/>
+      <NavLink to="/">
+        {({ isActive, isPending }) => (
+        <NavIcon active={isActive} icon={<FaHome size={28}/>} text="Home" />
+        )}
+      </NavLink>
+        <NavLink to="/profiles">
+        {({ isActive, isPending }) => (
+        <NavIcon  active={isActive} icon={<BsPlus size={32}/>} text="Dashboard"/>
+        )}
+      </NavLink>
+        <NavLink to="/profiles">
+        {({ isActive, isPending }) => (
+        <NavIcon  active={isActive} icon={<BiStats size={20}/>} text="Profiles"/>
+        )}
+      </NavLink>
+        <NavLink to="/map">
+        {({ isActive, isPending }) => (
+        <NavIcon  active={isActive} icon={<LiaMapMarkedAltSolid size={20}/>} text="Map"/>
+        )}
+      </NavLink>
+        <NavLink to="/settings">
+        {({ isActive, isPending }) => (
+        <NavIcon  active={isActive} icon={<FiSettings size={20}/>} text="Settings"/>
+        )}
+      </NavLink>
+        <NavLink to="/contact">
+        {({ isActive, isPending }) => (
+        <NavIcon  active={isActive} icon={<AiOutlineMail size={20}/>} text="Contact"/>
+        )}
+      </NavLink>
+        <NavLink to="/documentation">
+        {({ isActive, isPending }) => (
+        <NavIcon  active={isActive} icon={<HiDocumentText size={20}/>} text="Documentation"/>
+        )}
+      </NavLink>
+        <NavLink to="/donate">
+        {({ isActive, isPending }) => (
+        <NavIcon  active={isActive} icon={<FaPaypal size={20}/>} text="Donate"/>
+        )}
+      </NavLink>
+        <NavLink to="/market">
+        {({ isActive, isPending }) => (
+        <NavIcon  active={isActive} icon={<AiOutlineShoppingCart size={20}/>} text="Market"/>
+        )}
+      </NavLink>
     </div>
   )
 }
