@@ -21,12 +21,14 @@ function App() {
       <Nav/>
       <Routes>
         <Route path="/" element={<Home />}>
+        {/* TODO HOMEPAGE */}
           {/* <Route
             path="messages"
             element={<DashboardMessages />}
           />
           <Route path="tasks" element={<DashboardTasks />} /> */}
         </Route>
+        {/* TODO ABOUT PAGE */}
         {/* <Route path="about" element={<AboutPage />} /> */}
         <Route path="documentation" element={<Documentation />} />
         <Route path="tracks" element={<Tracks />} />
