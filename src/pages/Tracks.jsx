@@ -1,4 +1,5 @@
 import React, {useState} from 'react'
+// import Table from '../components/table/Table'
 
 const Tracks = () => {
   const [trackData, setTrackData] = useState([
@@ -29,13 +30,18 @@ const Tracks = () => {
 
       {/* SUITS */}
 
-
+      {/* TODO https://www.youtube.com/watch?v=j6-ImdZW7aM&ab_channel=Joshtriedcoding */}
+      {/* TODO https://ui.shadcn.com/examples/dashboard */}
       {/* LIMIT RESULTS BY QUANTITY */}
       {/* SEACHBAR */}
       {/* TABLE */}
       {/* table header */}
       {/* date, height, location, suit, BASE */}
       {/* PAGINATION */}
+      
+      {/* delete table components  */}
+      {/* disect table components  */}
+      {/* <Table /> */}
     </div>
   )
 }
